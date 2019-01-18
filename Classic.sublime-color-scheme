@@ -1,56 +1,111 @@
 {
-    "name": "Sublime Widgets",
+    "name": "Classic Summerfruit",
     "variables":
     {
-        "black": "hsl(0, 0%, 0%)",
-        "black2": "hsl(60, 2%, 11%)",
-        "blue": "hsl(204, 62%, 30%)",
-        "blue2": "hsl(201, 31%, 71%)",
-        "blue3": "hsl(216, 100%, 50%)",
-        "blue4": "hsl(209, 26%, 73%)",
-        "blue5": "hsl(214, 45%, 47%)",
-        "blue6": "hsl(160, 23%, 23%)",
-        "grey": "hsl(202, 7%, 68%)",
-        "grey2": "hsl(0, 0%, 75%)",
-        "orange": "hsl(29, 91%, 54%)",
-        "white": "hsl(0, 0%, 90%)"
+        "white": "#fdfdfd",
+        "black1": "#181818",
+        "black2": "#636363",
+        "gray": "#aaaaaa",
+        "pink": "#fc1785",
+        "red": "#d40915",
+        "brown": "#9d550f",
+        "orange": "#fb6620",
+        "yellow": "#ffe792",
+        "green1": "#22a21f",
+        "green2": "#a6e22e",
+        "green3": "#dbf3cd",
+        "blue1": "#1586d2",
+        "blue2": "#438ec3",
+        "blue3": "#c0d9eb",
+        "blue4": "#e7f1f7"
     },
     "globals":
     {
-       "foreground": "var(black2)",
-       "background": "var(white)",
-       "accent": "var(orange)",
-       "caret": "var(black)",
-       "invisibles": "var(grey2)",
-       "line_highlight": "color(var(black) alpha(0.071))",
-       "selection": "var(blue2)",
-       "selection_border": "var(blue4)",
-       "inactive_selection": "var(grey)"
+        "foreground": "var(black1)",
+        "background": "color(var(white) blend(#000 70%))",
+        "invisibles": "color(var(blue4) alpha(0.15))",
+        "accent": "var(orange)",
+        "caret": "var(black1)",
+        "line_highlight": "var(blue4)",
+        "selection": "var(blue4)",
+        "selection_border": "var(blue3)",
+        "inactive_selection": "var(blue3)",
+        "misspelling": "var(red)",
+        "shadow": "var(black2)",
+        "active_guide": "var(brown)",
+        "highlight": "var(yellow)",
+        "find_highlight": "var(yellow)",
+        "find_highlight_foreground": "var(brown)",
+        "brackets_options": "underline",
+        "brackets_foreground": "var(orange)",
+        "bracket_contents_options": "underline",
+        "bracket_contents_foreground": "var(blue2)",
+        "tags_options": "stippled_underline",
+        "tags_foreground": "var(pink)"
     },
     "rules":
     [
-       {
-           "name": "Comment",
-           "scope": "comment",
-           "foreground": "var(blue3)",
-           "font_style": "italic"
-       },
-       {
-           "name": "Keyword",
-           "scope": "keyword, storage",
-           "foreground": "var(blue5)"
-       },
-       {
-           "scope": "constant",
-           "foreground": "var(blue6)"
-       },
-       {
-           "scope": "string",
-           "foreground": "var(blue)"
-       },
-       {
-           "scope": "constant.character.escape",
-           "foreground": "var(orange)"
-       }
+        {
+            "name": "String",
+            "scope": "string",
+            "foreground": "var(blue1)"
+        },
+        {
+            "name": "Number",
+            "scope": "constant.numeric",
+            "foreground": "var(blue1)"
+        },
+        {
+            "name": "Constant",
+            "scope": "constant",
+            "foreground": "var(blue1)"
+        },
+        {
+            "name": "Variable",
+            "scope": "variable",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "Keyword",
+            "scope": "keyword",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Storage",
+            "scope": "storage",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "Entity",
+            "scope": "entity",
+            "foreground": "var(black1)"
+        },
+        {
+            "name": "Class name",
+            "scope": "entity.name.class",
+            "foreground": "var(black1)",
+            "font_style": "underline"
+        },
+        {
+            "name": "Inherited class",
+            "scope": "entity.other.inherited-class",
+            "foreground": "var(pink)",
+            "font_style": "underline"
+        },
+        {
+            "name": "Tag name",
+            "scope": "entity.name.tag",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "Tag attributes",
+            "scope": "entity.other.attribute-name",
+            "foreground": "var(green2)"
+        },
+        {
+            "name": "Support",
+            "scope": "support",
+            "foreground": "var(gray)"
+        }
     ]
 }

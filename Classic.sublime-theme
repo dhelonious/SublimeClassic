@@ -6,6 +6,7 @@
         "class": "title_bar",
         "fg": ["background", 255, 255, 255, 0.7],
         "bg": ["background", 0, 0, 0, 0.15]
+        // "bg": ["background", 255, 255, 255, 0.06]
     },
     {
         "class": "title_bar",
@@ -26,6 +27,13 @@
     // Side Bar
     {
         "class": "sidebar_container",
+        "layer0.tint": ["background", 255, 255, 255, 0.06],
+        "layer0.opacity": 1.0,
+        "content_margin": 0
+    },
+    {
+        "class": "sidebar_container",
+        "settings": ["use_legacy_tabs"],
         "layer0.tint": ["background", 0, 0, 0, 0.15],
         "layer0.opacity": 1.0,
         "content_margin": 0
@@ -47,6 +55,12 @@
         "parents": [{"class": "window", "attributes": ["file_light"]}],
         "layer0.tint": ["background", 0, 0, 0, 0.06],
         "layer0.opacity": 1.0
+    },
+    {
+        "class": "sidebar_container",
+        "settings": ["use_legacy_tabs"],
+        "parents": [{"class": "window", "attributes": ["file_light"]}],
+        "layer0.tint": ["background", 0, 0, 0, 0.15]
     },
     {
         "class": "sidebar_tree",
@@ -296,15 +310,15 @@
     {
         "class": "tabset_control",
         "layer0.opacity": 1.0,
-        "content_margin": [4, 6, 8, 0],
+        "content_margin": [4, 4, 8, 0],
         "tint_index": 0,
-        "tint_modifier": ["background", 0, 0, 0, 0.15],
+        "tint_modifier": [255, 255, 255, 0.06],
         "tab_height": 34,
         "tab_overlap": 16
     },
     {
         "class": "tabset_control",
-        "settings": ["mouse_wheel_switches_tabs", "!enable_tab_scrolling"],
+        "settings": ["!show_tab_scroll_buttons", "mouse_wheel_switches_tabs", "!enable_tab_scrolling"],
         "mouse_wheel_switch": true
     },
     {
@@ -314,6 +328,12 @@
     },
     {
         "class": "tabset_control",
+        "attributes": ["file_medium_dark"],
+        "tint_modifier": ["background", 255, 255, 255, 0.06]
+    },
+    {
+        "class": "tabset_control",
+        "settings": ["use_legacy_tabs"],
         "attributes": ["file_medium_dark"],
         "tint_modifier": ["background", 0, 0, 0, 0.15]
     },
@@ -354,6 +374,12 @@
         "attributes": ["file_medium"],
         "layer1.opacity": 1.0,
         "tint_index": 1,
+        "tint_modifier": [255, 255, 255, 0.06]
+    },
+    {
+        "class": "tab_control",
+        "attributes": ["file_medium"],
+        "settings": ["use_legacy_tabs"],
         "tint_modifier": [0, 0, 0, 0.15]
     },
     {
@@ -361,7 +387,7 @@
         "attributes": ["file_medium_dark"],
         "layer1.opacity": 1.0,
         "tint_index": 1,
-        "tint_modifier": [0, 0, 0, 0.15]
+        "tint_modifier": [255, 255, 255, 0.1]
     },
     {
         "class": "tab_control",
@@ -374,7 +400,7 @@
         "attributes": ["hover"],
         "layer1.opacity": 1.0,
         "tint_index": 1,
-        "tint_modifier": [0, 0, 0, 0.06]
+        "tint_modifier": [255, 255, 255, 0.14]
     },
     {
         "class": "tab_control",
@@ -409,7 +435,8 @@
     {
         "class": "tabset_control",
         "settings": ["use_legacy_tabs"],
-        "content_margin": [4, 0, 8, 0]
+        "content_margin": [4, 0, 8, 0],
+        "tint_modifier": [0, 0, 0, 0.15]
     },
     {
         "class": "tab_control",
@@ -443,6 +470,7 @@
         "attributes": ["file_medium"],
         "layer2.opacity": 0.1,
         "tint_modifier": [0, 0, 0, 0.15]
+        // "tint_modifier": [255, 255, 255, 0.06]
     },
     {
         "class": "tab_control",
@@ -649,9 +677,14 @@
     // Quick Panel
     {
         "class": "overlay_control",
-        "layer0.tint": ["background", 0, 0, 0, 0.15],
+        "layer0.tint": ["background", 255, 255, 255, 0.06],
         "layer0.opacity": 1.0,
         "content_margin": 4
+    },
+    {
+        "class": "overlay_control",
+        "settings": ["use_legacy_tabs"],
+        "layer0.tint": ["background", 0, 0, 0, 0.15]
     },
     {
         "class": "overlay_control",
@@ -671,9 +704,14 @@
     {
         "class": "quick_panel",
         "row_padding": 6,
-        "layer0.tint": ["background", 0, 0, 0, 0.15],
+        "layer0.tint": ["background", 255, 255, 255, 0.06],
         "layer0.opacity": 1.0,
         "dark_content": true
+    },
+    {
+        "class": "quick_panel",
+        "settings": ["use_legacy_tabs"],
+        "layer0.tint": ["background", 0, 0, 0, 0.15]
     },
     {
         "class": "quick_panel",
@@ -729,7 +767,7 @@
     },
     {
         "class": "quick_panel_label",
-        "fg": ["background", 255, 255, 255, 0.6],
+        "fg": ["background", 255, 255, 255, 0.4],
         "match_fg": ["accent", 1.0],
         "selected_fg": ["background", 255, 255, 255, 0.8],
         "selected_match_fg": ["accent", 1.0]
@@ -737,7 +775,7 @@
     {
         "class": "quick_panel_label",
         "parents": [{"class": "window", "attributes": ["file_light"]}],
-        "fg": ["background", 0, 0, 0, 0.6],
+        "fg": ["background", 0, 0, 0, 0.4],
         "selected_fg": ["background", 0, 0, 0, 0.8]
     },
     {
@@ -769,8 +807,13 @@
     // Views
     {
         "class": "grid_layout_control",
-        "border_color": ["background", 0, 0, 0, 0.15],
+        "layer0.tint": ["background", 255, 255, 255, 0.06],
         "border_size": 2
+    },
+    {
+        "class": "grid_layout_control",
+        "settings": ["use_legacy_tabs"],
+        "layer0.tint": ["background", 0, 0, 0, 0.15]
     },
     {
         "class": "grid_layout_control",
@@ -785,6 +828,12 @@
     {
         "class": "grid_layout_control",
         "parents": [{"class": "window", "attributes": ["file_medium_dark"]}],
+        "border_color": ["background", 255, 255, 255, 0.06]
+    },
+    {
+        "class": "grid_layout_control",
+        "parents": [{"class": "window", "attributes": ["file_medium_dark"]}],
+        "settings": ["use_legacy_tabs"],
         "border_color": ["background", 0, 0, 0, 0.15]
     },
     {
@@ -910,9 +959,14 @@
     // Panels
     {
         "class": "panel_control",
-        "layer0.tint": ["background", 0, 0, 0, 0.3],
+        "layer0.tint": ["background", 0, 0, 0, 0.25],
         "layer0.opacity": 1.0,
         "content_margin": [2, 2, 2, 0]
+    },
+    {
+        "class": "panel_control",
+        "settings": ["use_legacy_tabs"],
+        "layer0.tint": ["background", 0, 0, 0, 0.3]
     },
     {
         "class": "panel_control",
@@ -921,6 +975,12 @@
     },
     {
         "class": "panel_control",
+        "parents": [{"class": "window", "attributes": ["file_medium"]}],
+        "layer0.tint": ["background", 0, 0, 0, 0.25]
+    },
+    {
+        "class": "panel_control",
+        "settings": ["use_legacy_tabs"],
         "parents": [{"class": "window", "attributes": ["file_medium"]}],
         "layer0.tint": ["background", 0, 0, 0, 0.3]
     },
@@ -931,6 +991,12 @@
     },
     {
         "class": "panel_control",
+        "parents": [{"class": "switch_project_window"}],
+        "layer0.tint": ["background", 255, 255, 255, 0.06]
+    },
+    {
+        "class": "panel_control",
+        "settings": ["use_legacy_tabs"],
         "parents": [{"class": "switch_project_window"}],
         "layer0.tint": ["background", 0, 0, 0, 0.15]
     },
@@ -1124,8 +1190,14 @@
     {
         "class": "scroll_bar_control",
         "parents": [{"class": "switch_project_window"}],
-        "layer0.tint": ["background", 0, 0, 0, 0.15],
+        "layer0.tint": ["background", 255, 255, 255, 0.06],
         "tint_index": -1
+    },
+    {
+        "class": "scroll_bar_control",
+        "parents": [{"class": "switch_project_window"}],
+        "settings": ["use_legacy_tabs"],
+        "layer0.tint": ["background", 0, 0, 0, 0.15]
     },
     {
         "class": "scroll_bar_control",
@@ -1578,7 +1650,7 @@
     // Status Bar
     {
         "class": "status_bar",
-        "layer0.tint": ["background", 0, 0, 0, 0.3],
+        "layer0.tint": ["background", 0, 0, 0, 0.25],
         "layer0.opacity": 1.0,
         "layer1.texture": "Theme - Classic/footer_divider.png",
         "layer1.inner_margin": [0, 1, 0, 1],
@@ -1588,11 +1660,22 @@
     },
     {
         "class": "status_bar",
+        "settings": ["use_legacy_tabs"],
+        "layer0.tint": ["background", 0, 0, 0, 0.3]
+    },
+    {
+        "class": "status_bar",
         "parents": [{"class": "window", "attributes": ["file_dark"]}],
         "layer0.tint": ["background", 255, 255, 255, 0.09]
     },
     {
         "class": "status_bar",
+        "parents": [{"class": "window", "attributes": ["file_medium"]}],
+        "layer0.tint": ["background", 0, 0, 0, 0.25]
+    },
+    {
+        "class": "status_bar",
+        "settings": ["use_legacy_tabs"],
         "parents": [{"class": "window", "attributes": ["file_medium"]}],
         "layer0.tint": ["background", 0, 0, 0, 0.3]
     },

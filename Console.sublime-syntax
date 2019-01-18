@@ -6,7 +6,6 @@ variables:
   sql_indicator: \s*(?:SELECT|INSERT|UPDATE|DELETE|CREATE|REPLACE|ALTER)\b
 contexts:
   main:
-    # -- Kornuz modifications BEGIN --
     - match: '^(startup(?=, version:))'
       scope: support.function.builtin.console
     - match: '^(using gpu)'
@@ -31,7 +30,6 @@ contexts:
       scope: constant.other.console
     - match: '\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}'
       scope: constant.other.console
-    # -- Kornuz modifications END --
     - match: "#"
       captures:
         0: punctuation.definition.comment.console
