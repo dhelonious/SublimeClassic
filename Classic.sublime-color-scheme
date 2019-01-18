@@ -66,11 +66,6 @@
             "foreground": "var(pink)"
         },
         {
-            "name": "Keyword",
-            "scope": "keyword",
-            "foreground": "var(orange)"
-        },
-        {
             "name": "Storage",
             "scope": "storage",
             "foreground": "var(pink)"
@@ -107,5 +102,10 @@
             "scope": "support",
             "foreground": "var(gray)"
         }
+        // {
+        //     "name": "Keyword",
+        //     "scope": "keyword",
+        //     "foreground": "var(orange)"
+        // }
     ]
 }
