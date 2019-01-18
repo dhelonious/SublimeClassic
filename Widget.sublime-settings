@@ -1,0 +1,6 @@
+{
+    "syntax": "Packages/Theme - Classic/Console.sublime-syntax",
+    "color_scheme": "Packages/Theme - Classic/Classic.sublime-color-scheme",
+	"draw_shadows": false,
+    "font_size": 12
+}

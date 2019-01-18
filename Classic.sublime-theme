@@ -296,7 +296,7 @@
     {
         "class": "tabset_control",
         "layer0.opacity": 1.0,
-        "content_margin": [4, 4, 8, 0],
+        "content_margin": [4, 6, 8, 0],
         "tint_index": 0,
         "tint_modifier": ["background", 0, 0, 0, 0.15],
         "tab_height": 34,
@@ -339,7 +339,7 @@
         "layer2.opacity": 0.04,
         "tint_index": 1,
         "tint_modifier": [0, 0, 0, 0.12],
-        "content_margin": [26, 8, 22, 8],
+        "content_margin": [26, 4, 22, 8],
         "hit_test_level": 0.3
     },
     {
@@ -693,6 +693,8 @@
     },
     {
         "class": "mini_quick_panel_row",
+        "layer0.texture": "Theme - Classic/input.png",
+        "layer0.inner_margin": [10, 4],
         "layer0.tint": [255, 255, 255],
         "layer0.opacity": 0.0
     },
@@ -910,7 +912,7 @@
         "class": "panel_control",
         "layer0.tint": ["background", 0, 0, 0, 0.3],
         "layer0.opacity": 1.0,
-        "content_margin": 2
+        "content_margin": [2, 2, 2, 0]
     },
     {
         "class": "panel_control",
@@ -951,7 +953,7 @@
         "class": "panel_grid_control",
         "inside_spacing": 4,
         "outside_hspacing": 4,
-        "outside_vspacing": 8
+        "outside_vspacing": 4
     },
     {
         "class": "panel_close_button",
@@ -1155,41 +1157,42 @@
         "class": "text_line_control",
         "layer0.texture": "Theme - Classic/input.png",
         "layer0.opacity": 1.0,
-        "layer0.tint": ["background", 1.0],
-        "layer0.inner_margin": [10, 8],
-        "content_margin": 10
+        "layer0.tint": ["background", 255, 255, 255, 0.3],
+        "layer0.inner_margin": [8, 4],
+        "color_scheme_tint": ["background", 255, 255, 255, 0.3],
+        "content_margin": [8, 7, 8, 5]
     },
     {
         "class": "text_line_control",
         "parents": [{"class": "overlay_control"}],
         "layer0.texture": "Theme - Classic/input.png",
         "layer0.opacity": 1.0,
-        "layer0.tint": [255, 255, 255, 1.0],
-        "layer0.inner_margin": [10, 8],
+        "layer0.tint": ["background", 255, 255, 255, 0.3],
+        "layer0.inner_margin": [10, 4],
         "content_margin": 10,
         "layer1.texture": "Theme - Classic/input_search.png",
         "layer1.opacity": 1.0,
         "layer1.tint": ["accent", 1.0],
         "layer1.inner_margin": [52, 52, 0, 0],
-        "content_margin": [52, 10, 10, 13]
+        "content_margin": [52, 11, 10, 12]
     },
     {
         "class": "text_line_control",
         "parents": [{"class": "switch_project_window"}],
         "layer0.texture": "Theme - Classic/input.png",
         "layer0.opacity": 1.0,
-        "layer0.tint": [255, 255, 255, 1.0],
-        "layer0.inner_margin": [10, 8],
+        "layer0.tint": ["background", 255, 255, 255, 0.3],
+        "layer0.inner_margin": [10, 4],
         "content_margin": 10,
         "layer1.texture": "Theme - Classic/input_search.png",
         "layer1.opacity": 1.0,
         "layer1.tint": ["accent", 1.0],
         "layer1.inner_margin": [52, 52, 0, 0],
-        "content_margin": [52, 10, 10, 13]
+        "content_margin": [52, 11, 10, 12]
     },
     {
         "class": "dropdown_button_control",
-        "layer0.texture": "Theme - Classic/dark/dropdown_button.png",
+        "layer0.texture": "Theme - Classic/dropdown_button.png",
         "layer0.opacity": { "target": 0.3, "speed": 4.0, "interpolation": "smoothstep" },
         "content_margin": [9, 8, 9, 8]
     },
@@ -1207,11 +1210,11 @@
     // Buttons
     {
         "class": "button_control",
-        "layer0.texture": "Theme - Classic/light/button.png",
+        "layer0.texture": "Theme - Classic/button.png",
         "layer0.opacity": { "target": 0.15, "speed": 4.0, "interpolation": "smoothstep" },
-        "layer0.inner_margin": 4,
-        "min_size": [80, 0],
-        "content_margin": [10, 13]
+        "layer0.inner_margin": [4, 4],
+        "min_size": [100, 38],
+        "content_margin": 0
     },
     {
         "class": "button_control",
@@ -1323,7 +1326,7 @@
         "layer0.texture": "Theme - Classic/dark/icon_regex.png",
         "layer0.tint": [255, 255, 255],
         "layer0.opacity": { "target": 0.7, "speed": 5.0, "interpolation": "smoothstep" },
-        "content_margin": [14, 12]
+        "content_margin": [16, 16]
     },
     {
         "class": "icon_regex",
@@ -1346,7 +1349,7 @@
         "layer0.texture": "Theme - Classic/dark/icon_case_sensitive.png",
         "layer0.tint": [255, 255, 255],
         "layer0.opacity": { "target": 0.7, "speed": 5.0, "interpolation": "smoothstep" },
-        "content_margin": [14, 12]
+        "content_margin": [16, 16]
     },
     {
         "class": "icon_case",
@@ -1369,7 +1372,7 @@
         "layer0.texture": "Theme - Classic/dark/icon_whole_word.png",
         "layer0.tint": [255, 255, 255],
         "layer0.opacity": { "target": 0.7, "speed": 5.0, "interpolation": "smoothstep" },
-        "content_margin": [14, 12]
+        "content_margin": [16, 16]
     },
     {
         "class": "icon_whole_word",
@@ -1392,7 +1395,7 @@
         "layer0.texture": "Theme - Classic/dark/icon_wrap.png",
         "layer0.tint": [255, 255, 255],
         "layer0.opacity": { "target": 0.7, "speed": 5.0, "interpolation": "smoothstep" },
-        "content_margin": [14, 12]
+        "content_margin": [16, 16]
     },
     {
         "class": "icon_wrap",
@@ -1415,7 +1418,7 @@
         "layer0.texture": "Theme - Classic/dark/icon_in_selection.png",
         "layer0.tint": [255, 255, 255],
         "layer0.opacity": { "target": 0.7, "speed": 5.0, "interpolation": "smoothstep" },
-        "content_margin": [14, 12]
+        "content_margin": [16, 16]
     },
     {
         "class": "icon_in_selection",
@@ -1438,7 +1441,7 @@
         "layer0.texture": "Theme - Classic/dark/icon_highlight_matches.png",
         "layer0.tint": [255, 255, 255],
         "layer0.opacity": { "target": 0.7, "speed": 5.0, "interpolation": "smoothstep" },
-        "content_margin": [14, 12]
+        "content_margin": [16, 16]
     },
     {
         "class": "icon_highlight",
@@ -1461,7 +1464,7 @@
         "layer0.texture": "Theme - Classic/dark/icon_preserve_case.png",
         "layer0.tint": [255, 255, 255],
         "layer0.opacity": { "target": 0.7, "speed": 5.0, "interpolation": "smoothstep" },
-        "content_margin": [14, 12]
+        "content_margin": [16, 16]
     },
     {
         "class": "icon_preserve_case",
@@ -1484,7 +1487,7 @@
         "layer0.texture": "Theme - Classic/dark/icon_context.png",
         "layer0.tint": [255, 255, 255],
         "layer0.opacity": { "target": 0.7, "speed": 5.0, "interpolation": "smoothstep" },
-        "content_margin": [14, 12]
+        "content_margin": [16, 16]
     },
     {
         "class": "icon_context",
@@ -1507,7 +1510,7 @@
         "layer0.texture": "Theme - Classic/dark/icon_use_buffer.png",
         "layer0.tint": [255, 255, 255],
         "layer0.opacity": { "target": 0.7, "speed": 5.0, "interpolation": "smoothstep" },
-        "content_margin": [14, 12]
+        "content_margin": [16, 16]
     },
     {
         "class": "icon_use_buffer",
@@ -1581,7 +1584,7 @@
         "layer1.inner_margin": [0, 1, 0, 1],
         "layer1.draw_center": false,
         "layer1.opacity": 0.0,
-        "content_margin": [8, 2, 8, 2]
+        "content_margin": [8, 0, 8, 2]
     },
     {
         "class": "status_bar",
