@@ -938,7 +938,7 @@
     {
         "class": "auto_complete_label",
         "parents": [{"class": "auto_complete", "attributes": ["file_light"]}],
-        "fg": ["background", 255, 255, 255, 0.9],
+        "fg": ["background", 0, 0, 0, 0.9],
         "match_fg": ["accent", 1.0],
         "selected_fg": [0, 0, 0, 0.0],
         "selected_match_fg": ["accent", 1.0],
