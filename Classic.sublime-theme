@@ -1245,7 +1245,7 @@
         "layer1.texture": "Theme - Classic/input_search.png",
         "layer1.opacity": 1.0,
         "layer1.tint": ["accent", 1.0],
-        "layer1.inner_margin": [52, 52, 0, 0],
+        "layer1.inner_margin": [52, 48, 0, 0],
         "content_margin": [52, 11, 10, 12]
     },
     {
@@ -1259,7 +1259,7 @@
         "layer1.texture": "Theme - Classic/input_search.png",
         "layer1.opacity": 1.0,
         "layer1.tint": ["accent", 1.0],
-        "layer1.inner_margin": [52, 52, 0, 0],
+        "layer1.inner_margin": [52, 48, 0, 0],
         "content_margin": [52, 11, 10, 12]
     },
     {
