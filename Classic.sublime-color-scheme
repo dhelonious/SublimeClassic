@@ -48,17 +48,17 @@
         {
             "name": "String",
             "scope": "string",
-            "foreground": "var(blue1)"
+            "foregorund": "color(var(blue1) blend(#fff 90%))"
         },
         {
             "name": "Number",
             "scope": "constant.numeric",
-            "foreground": "var(blue1)"
+            "foreground": "color(var(blue1) blend(#fff 90%))"
         },
         {
             "name": "Constant",
             "scope": "constant",
-            "foreground": "var(blue1)"
+            "foreground": "color(var(blue1) blend(#fff 90%))"
         },
         {
             "name": "Variable",
@@ -101,11 +101,16 @@
             "name": "Support",
             "scope": "support",
             "foreground": "var(gray)"
+        },
+        {
+            "name": "Keyword",
+            "scope": "keyword",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Console keyword",
+            "scope": "keyword.operator.arithmetic.console",
+            "foreground": "var(black1)"
         }
-        // {
-        //     "name": "Keyword",
-        //     "scope": "keyword",
-        //     "foreground": "var(orange)"
-        // }
     ]
 }
