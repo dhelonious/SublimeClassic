@@ -39,7 +39,7 @@
         "brackets_options": "underline",
         "brackets_foreground": "var(orange)",
         "bracket_contents_options": "underline",
-        "bracket_contents_foreground": "var(blue2)",
+        "bracket_contents_foreground": "color(var(blue2) blend(#fff 90%))",
         "tags_options": "stippled_underline",
         "tags_foreground": "var(pink)"
     },
