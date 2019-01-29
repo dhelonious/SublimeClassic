@@ -365,7 +365,6 @@
     {
         "class": "tab_control",
         "attributes": ["file_light"],
-        "layer0.opacity": 0.1,
         "layer2.opacity": 0.1,
         "tint_modifier": [0, 0, 0, 0.1]
     },
