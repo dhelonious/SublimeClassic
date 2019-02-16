@@ -100,7 +100,7 @@
         {
             "name": "Support",
             "scope": "support",
-            "foreground": "var(gray)"
+            "foreground": "color(var(gray) blend(#000 70%))"
         },
         {
             "name": "Keyword",
