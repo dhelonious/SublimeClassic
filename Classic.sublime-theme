@@ -6,7 +6,6 @@
         "class": "title_bar",
         "fg": ["background", 255, 255, 255, 0.7],
         "bg": ["background", 0, 0, 0, 0.15]
-        // "bg": ["background", 255, 255, 255, 0.06]
     },
     {
         "class": "title_bar",
@@ -469,7 +468,6 @@
         "attributes": ["file_medium"],
         "layer2.opacity": 0.1,
         "tint_modifier": [0, 0, 0, 0.15]
-        // "tint_modifier": [255, 255, 255, 0.06]
     },
     {
         "class": "tab_control",
@@ -636,6 +634,14 @@
         "class": "scroll_tabs_left_button",
         "attributes": ["hover"],
         "layer0.opacity": { "target": 0.8, "speed": 4.0, "interpolation": "smoothstep" }
+    },
+    {
+        "class": "scroll_tabs_left_button",
+        "content_margin": [0, 0]
+    },
+    {
+        "class": "scroll_tabs_right_button",
+        "content_margin": [0, 0]
     },
     {
         "class": "scroll_tabs_right_button",
