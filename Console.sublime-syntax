@@ -5,7 +5,7 @@ scope: source.console
 
 contexts:
   main:
-    - match: '^(startup(?=, version:)|plugins loaded)'
+    - match: '^(startup(?=, version:)|plugins loaded|generating syntax summary)'
       scope: support.function.console
     - match: '^(using gpu)'
       push:
@@ -30,8 +30,16 @@ contexts:
         - meta_scope: source.line.console
         - match: \n
           pop: true
+    - match: '^(reloading settings )'
+      push:
+        - meta_content_scope: storage.console
+        - meta_scope: source.line.console
+        - match: \n
+          pop: true
 
     - match: '([-_.a-zA-Z][-_.\w]*)?/([-_.\w][-_.\w ]*/)+([-_.\w][-_.\w ]*)?'
+      scope: constant.other.console
+    - match: '([-_.a-zA-Z][:-_.\w]*)?\\([-_.\w][-_.\w ]*\\)+([-_.\w][-_.\w ]*)?'
       scope: constant.other.console
     - match: '\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}'
       scope: constant.numeric.console
@@ -43,14 +51,12 @@ contexts:
     - match: ('[^']*')
       scope: string.console
 
-    - match: '(Error|error|ERROR)'
+    - match: '(([A-Za-z]*)?(Error|error|ERROR))'
       scope: message.error.console
-    - match: '(Warning|warning|WARNING)'
+    - match: '(([A-Za-z]*)?(Warning|warning|WARNING))'
       scope: message.warning.console
     - match: '^(INFO)'
       scope: message.info.console
-    - match: '((Arithmetic|Assertion|Attribute|BlockingIO|BrokenPipe|Buffer|ChildProcess|Connection(Aborted|Refused|Reset)?|EOF|Environment|FileExists|FileNotFound|FloatingPoint|Interrupted|IO|IsADirectoryError|Import|Indentation|Index|Key|Lookup|Memory|Name|NotADirectory|NotImplemented|OS|Overflow|Permission|ProcessLookup|Reference|Runtime|Standard|Syntax|System|Tab|Timeout|Type|UnboundLocal|Unicode(Encode|Decode|Translate)?|Value|VMS|Windows|ZeroDivision)Error|((Pending)?Deprecation|Runtime|Syntax|User|Future|Import|Unicode|Bytes)?Warning|(Base)?Exception)'
-      scope: message.error.console
 
     - match: '(\\x[0-9A-F]{2})|(\\[0-7]{3})|(\\\n)|(\\\\)|(\\\")|(\\'')|(\\a)|(\\b)|(\\f)|(\\n)|(\\r)|(\\t)|(\\v)'
       scope: support.console
