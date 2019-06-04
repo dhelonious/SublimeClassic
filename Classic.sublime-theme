@@ -349,10 +349,10 @@
     },
     {
         "class": "tab_control",
-        "layer1.texture": "Theme - Classic/tab.png",
+        "layer1.texture": "Theme - Classic/assets/tab.png",
         "layer1.inner_margin": [19, 0, 19, 0],
         "layer1.opacity": 1.0,
-        "layer2.texture": "Theme - Classic/tab_border.png",
+        "layer2.texture": "Theme - Classic/assets/tab_border.png",
         "layer2.inner_margin": [19, 0, 19, 0],
         "layer2.tint": [255, 255, 255, 0.9],
         "layer2.opacity": 0.04,
@@ -439,10 +439,10 @@
     {
         "class": "tab_control",
         "settings": ["use_legacy_tabs"],
-        "layer0.texture": "Theme - Classic/legacy_tab_gradient.png",
+        "layer0.texture": "Theme - Classic/assets/legacy_tab_gradient.png",
         "layer0.inner_margin": [19, 0, 19, 0],
         "layer0.opacity": 0.2,
-        "layer1.texture": "Theme - Classic/legacy_tab.png",
+        "layer1.texture": "Theme - Classic/assets/legacy_tab.png",
         "layer1.inner_margin": [19, 0, 19, 0],
         "layer1.opacity": 1.0,
         "layer2.texture": "Theme - Classic/light/legacy_tab_border.png",
@@ -585,13 +585,13 @@
     {
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
-        "layer0.texture": "Theme - Classic/tab_dirty.png",
+        "layer0.texture": "Theme - Classic/assets/tab_dirty.png",
         "layer0.tint": ["accent", 1.0]
     },
     {
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["file_light", "dirty"]}],
-        "layer0.texture": "Theme - Classic/tab_dirty.png",
+        "layer0.texture": "Theme - Classic/assets/tab_dirty.png",
         "layer0.tint": ["accent", 1.0]
     },
     {
@@ -663,7 +663,7 @@
     },
     {
         "class": "show_tabs_dropdown_button",
-        "layer0.texture": "Theme - Classic/tab_dropdown.png",
+        "layer0.texture": "Theme - Classic/assets/tab_dropdown.png",
         "layer0.opacity": { "target": 0.7, "speed": 4.0, "interpolation": "smoothstep" },
         "layer0.tint": [255, 255, 255],
         "content_margin": [9, 10]
@@ -736,7 +736,7 @@
     },
     {
         "class": "mini_quick_panel_row",
-        "layer0.texture": "Theme - Classic/input.png",
+        "layer0.texture": "Theme - Classic/assets/input.png",
         "layer0.inner_margin": [10, 4],
         "layer0.tint": [255, 255, 255],
         "layer0.opacity": 0.0
@@ -1232,7 +1232,7 @@
     // Inputs
     {
         "class": "text_line_control",
-        "layer0.texture": "Theme - Classic/input.png",
+        "layer0.texture": "Theme - Classic/assets/input.png",
         "layer0.opacity": 1.0,
         "layer0.tint": ["background", 255, 255, 255, 0.3],
         "layer0.inner_margin": [8, 4],
@@ -1242,12 +1242,12 @@
     {
         "class": "text_line_control",
         "parents": [{"class": "overlay_control"}],
-        "layer0.texture": "Theme - Classic/input.png",
+        "layer0.texture": "Theme - Classic/assets/input.png",
         "layer0.opacity": 1.0,
         "layer0.tint": ["background", 255, 255, 255, 0.3],
         "layer0.inner_margin": [10, 4],
         "content_margin": 10,
-        "layer1.texture": "Theme - Classic/input_search.png",
+        "layer1.texture": "Theme - Classic/assets/input_search.png",
         "layer1.opacity": 1.0,
         "layer1.tint": ["accent", 1.0],
         "layer1.inner_margin": [52, 48, 0, 0],
@@ -1256,12 +1256,12 @@
     {
         "class": "text_line_control",
         "parents": [{"class": "switch_project_window"}],
-        "layer0.texture": "Theme - Classic/input.png",
+        "layer0.texture": "Theme - Classic/assets/input.png",
         "layer0.opacity": 1.0,
         "layer0.tint": ["background", 255, 255, 255, 0.3],
         "layer0.inner_margin": [10, 4],
         "content_margin": 10,
-        "layer1.texture": "Theme - Classic/input_search.png",
+        "layer1.texture": "Theme - Classic/assets/input_search.png",
         "layer1.opacity": 1.0,
         "layer1.tint": ["accent", 1.0],
         "layer1.inner_margin": [52, 48, 0, 0],
@@ -1269,7 +1269,7 @@
     },
     {
         "class": "dropdown_button_control",
-        "layer0.texture": "Theme - Classic/dropdown_button.png",
+        "layer0.texture": "Theme - Classic/assets/dropdown_button.png",
         "layer0.opacity": { "target": 0.3, "speed": 4.0, "interpolation": "smoothstep" },
         "content_margin": [9, 8, 9, 8]
     },
@@ -1287,7 +1287,7 @@
     // Buttons
     {
         "class": "button_control",
-        "layer0.texture": "Theme - Classic/button.png",
+        "layer0.texture": "Theme - Classic/assets/button.png",
         "layer0.opacity": { "target": 0.15, "speed": 4.0, "interpolation": "smoothstep" },
         "layer0.inner_margin": [4, 4],
         "min_size": [100, 38],
@@ -1657,7 +1657,7 @@
         "class": "status_bar",
         "layer0.tint": ["background", 0, 0, 0, 0.25],
         "layer0.opacity": 1.0,
-        "layer1.texture": "Theme - Classic/footer_divider.png",
+        "layer1.texture": "Theme - Classic/assets/footer_divider.png",
         "layer1.inner_margin": [0, 1, 0, 1],
         "layer1.draw_center": false,
         "layer1.opacity": 0.0,
