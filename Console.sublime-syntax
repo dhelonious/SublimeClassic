@@ -50,6 +50,8 @@ contexts:
       scope: string.console
     - match: ('[^']*')
       scope: string.console
+    - match: (`[^']*')
+      scope: string.console
 
     - match: '(([A-Za-z]*)?(Error|error|ERROR))'
       scope: message.error.console
