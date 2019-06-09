@@ -17,9 +17,9 @@ The following list contains all settings considered by this theme. They can be s
 ## Scopes
 
 This theme provides basic console syntax highlighting. Most of the scopes being used should be defined in any color scheme. However, some special syntax scopes are used, which can be defined in your color scheme:
-* `message.error`
-* `message.warning`
-* `message.info`
+* `message.error.console`
+* `message.warning.console`
+* `message.info.console`
 
 Beware that syntax highlighting in Sublime Text 3 also applies to input panels!
 
