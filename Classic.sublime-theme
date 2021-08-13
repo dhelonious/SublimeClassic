@@ -10,7 +10,7 @@
         "dark_bg": "color(var(--background) blend(white 85%))",
         "medium_dark_bg": "color(var(--background) blend(white 95%))",
         "medium_bg": "color(var(--background) blend(black 80%))",
-        "light_bg": "color(var(--background) blend(black 90%))",
+        "light_bg": "color(var(--background) blend(black 85%))",
 
         "vcs_modified": "color(var(--orangish) min-contrast(var(--background) 2.5))",
         "vcs_missing": "color(var(--redish) min-contrast(var(--background) 2.5))",
@@ -24,8 +24,8 @@
         "icon_tint": "white",
         "icon_light_tint": "color(black a(0.7))",
 
-        "tool_tip_bg": "white",
-        "tool_tip_fg": "hsl(0, 0%, 25%)",
+        "tool_tip_bg": "var(--background)",
+        "tool_tip_fg": "color(var(--foreground) a(0.8))",
 
         "tabset_button_opacity": { "target": 0.6, "speed": 4.0, "interpolation": "smoothstep" },
         "tabset_new_tab_button_opacity": { "target": 0.3, "speed": 4.0, "interpolation": "smoothstep" },
@@ -47,7 +47,7 @@
         "file_tab_dark_bg": "color(var(dark_bg) blend(white 90%))",
         "file_tab_medium_dark_bg": "color(var(medium_dark_bg) blend(white 90%))",
         "file_tab_medium_bg": "color(var(medium_bg) blend(white 90%))",
-        "file_tab_light_bg": "color(var(light_bg) blend(white 90%))",
+        "file_tab_light_bg": "color(var(light_bg) blend(white 70%))",
 
         "file_tab_selected_dark_tint": "color(var(tabset_dark_tint_mod) a(- 70%))",
         "file_tab_selected_medium_dark_tint": "color(var(tabset_medium_dark_tint_mod) a(- 70%))",
@@ -55,9 +55,9 @@
         "file_tab_selected_light_tint": "color(var(tabset_light_tint_mod) a(- 70%))",
 
         "file_tab_selected_label_color": "white",
-        "file_tab_selected_light_label_color": "hsl(0, 0%, 20%)",
+        "file_tab_selected_light_label_color": "black",
         "file_tab_unselected_label_color": "color(var(file_tab_selected_label_color) a(0.5))",
-        "file_tab_unselected_light_label_color": "color(var(file_tab_selected_light_label_color) a(0.5))",
+        "file_tab_unselected_light_label_color": "color(var(file_tab_selected_light_label_color) a(0.7))",
 
         "file_tab_close_opacity": { "target": 0.5, "speed": 4.0, "interpolation": "smoothstep" },
         "file_tab_close_hover_opacity": { "target": 0.9, "speed": 4.0, "interpolation": "smoothstep" },
@@ -682,6 +682,13 @@
         },
         {
             "class": "tab_label",
+            "parents": [
+                {"class": "tab_control", "attributes": ["!selected", "file_light"]}
+            ],
+            "fg": "var(file_tab_unselected_light_label_color)"
+        },
+        {
+            "class": "tab_label",
             "parents": [{"class": "tab_control", "attributes": ["selected"]}],
             "fg": "var(file_tab_selected_label_color)"
         },
@@ -906,7 +913,7 @@
             "layer0.texture": "Theme - Classic/common/input.png",
             "layer0.inner_margin": [10, 4],
             "layer0.tint": "white",
-            "layer0.opacity": 0.0
+            "layer0.opacity": 0.0,
         },
         {
             "class": "mini_quick_panel_row",
@@ -1718,27 +1725,7 @@
             "layer0.opacity": 1.0,
             "layer0.inner_margin": [8, 4],
             "tint_index": 0,
-            "content_margin": [8, 7, 8, 5]
-        },
-        {
-            "class": "text_line_control",
-            "parents": [{"class": "overlay_control"}],
-            "layer0.texture": "Theme - Classic/common/input.png",
-            "layer0.opacity": 1.0,
-            "layer0.inner_margin": [10, 4],
-            "content_margin": 10,
-            "layer1.texture": "Theme - Classic/common/input_search.png",
-            "layer1.opacity": 1.0,
-            "layer1.tint": ["accent", 1.0],
-            "layer1.inner_margin": [52, 48, 0, 0],
-            "content_margin": [52, 11, 10, 12]
-        },
-        {
-            "class": "text_line_control",
-            "layer0.texture": "Theme - Classic/common/input.png",
-            "layer0.opacity": 1.0,
-            "layer0.inner_margin": [8, 4],
-            "color_scheme_tint": "color(var(--background) blend(var(--foreground) 70%))",
+            "color_scheme_tint": "color(var(--foreground) blend(var(--background) 12%))",
             "content_margin": [8, 7, 8, 5]
         },
         {
@@ -1754,6 +1741,7 @@
             "layer1.opacity": 1.0,
             "layer1.tint": ["accent", 1.0],
             "layer1.inner_margin": [52, 48, 0, 0],
+            "color_scheme_tint": "color(var(--foreground) blend(var(--background) 12%))",
             "content_margin": [52, 11, 10, 12]
         },
         {
@@ -1799,9 +1787,9 @@
             "class": "button_control",
             "layer0.texture": "Theme - Classic/common/button.png",
             "layer0.opacity": { "target": 0.15, "speed": 4.0, "interpolation": "smoothstep" },
-            "layer0.inner_margin": 4,
+            "layer0.inner_margin": [10, 4],
             "min_size": [80, 18],
-            "content_margin": [10, 4]
+            "content_margin": 10
         },
         {
             "class": "button_control",
