@@ -40,9 +40,9 @@
         "tabset_light_tint_mod": "color(black a(0.1))",
         "tabset_light_bg": "var(light_bg)",
 
-        "tabset_bg": "color(var(--background) blend(black 95%))",
-        "panel_bg": "color(var(--background) blend(black 95%))",
-        "status_bar_bg": "color(var(--background) blend(black 95%))",
+        "tabset_bg": "color(var(--background) blend(black 80%))",
+        "panel_bg": "color(var(--background) blend(black 80%))",
+        "status_bar_bg": "color(var(--background) blend(black 80%))",
 
         "file_tab_dark_bg": "color(var(dark_bg) blend(white 90%))",
         "file_tab_medium_dark_bg": "color(var(medium_dark_bg) blend(white 90%))",
